@@ -97,7 +97,7 @@ function MyPokemon() {
             Cancel
           </Button>
             <Button variant="primary" onClick={handleSave}>
-              Realese
+              Release
             </Button>
         </Modal.Footer>
       </Modal>
