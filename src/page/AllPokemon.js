@@ -50,7 +50,7 @@ function AllPokemon() {
     <>
       <div className="row justify-content-md-center">
         <div className="row col col-lg-10">
-          <h2>List of All Pokemon</h2>
+          <h2>List of All Pokemon.</h2>
           <h4 className="text-decoration-none font-weight-normal">My Pokemon Total: {countMyPokemon()} pokemons (in {localStorage.length} species)</h4>
           {data.pokemons.results.map(({ image, name, id }, index) => (
             <div key={image} className='cardpoke col col-md-2 col-sm-6 col-xs-12'>

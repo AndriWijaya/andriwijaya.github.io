@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as conn from './connection.js'; 
 import { ApolloProvider } from "@apollo/client";
-import { Route, NavLink, Routes, BrowserRouter } from "react-router-dom";
+import { Route, NavLink, Routes, HashRouter } from "react-router-dom";
 import AllPokemon from './page/AllPokemon';
 import Detail from './page/Detail';
 import MyPokemon from './page/MyPokemon';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <NavLink exact="true" to="/" className="navbar-brand">Wild Nature</NavLink>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/my-pokemon" element={ <MyPokemon/> }/>
         <Route path="/detail/:name" element={ <Detail/> }/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
